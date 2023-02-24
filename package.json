@@ -8,6 +8,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "mdb-vue-ui-kit": "^3.2.0",
     "vue": "^3.2.47"
   },
   "devDependencies": {

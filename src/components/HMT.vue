@@ -59,10 +59,45 @@ import HMTItem from '../components/HMTitem.vue'
     <div class="disclar">
       <font font-size="48px">Disclaimer</font><br>The HUMAN Protocol Foundation makes no representation, warranty, or undertaking, express or implied, as to the accuracy, reliability, completeness, or reasonableness of the Information. Any assumptions, opinions, and estimates expressed in the information on this page constitutes the HUMAN Protocol Foundation’s judgment as of 18/11/21 and are subject to change without notice. The HUMAN Protocol Foundation does not accept any liability for any direct, consequential or other loss arising from reliance on the contents of the information in this graphic.
     </div>
+    <div class="recentBg">
+      <div class="recTxt">Recent Entries<button style="font-size: 30px; width: 184px; height: 56px; vertical-align: text-top; right: 0%; position: absolute; border-radius: 10px;">Go to blog</button></div>
+    </div>
+    <div class="recentCards">
+      <img src="../assets/Group 1701.png" style="width: 40%;">
+      <img src="../assets/Group 1702.png" style="width: 40%;">
+      <img src="../assets/Group 1703.png" style="width: 40%;">
+    </div>
   </div>
 </template>
 
 <style>
+.recentCards{
+  position: absolute;
+  top: 690%;
+  width: 80%;
+  left: 10%;
+  display: flex;
+}
+
+.recentBg{
+  position: absolute;
+  top: 680%;
+  left: 10%;
+  width: 80%;
+}
+
+.recTxt{
+  font-family: 'Alliance No.1';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 72px;
+  /* or 120% */
+
+  letter-spacing: -0.4px;
+  color: #320A8D;
+}
+
 .disclar{
   font-family: 'Alliance No1';
   font-style: normal;
@@ -73,6 +108,10 @@ import HMTItem from '../components/HMTitem.vue'
 
   letter-spacing: 0.1px;
   color: #320A8D;
+  position: absolute;
+  top: 660%;
+  width: 80%;
+  left: 10%;
 }
 
 .howText{

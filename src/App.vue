@@ -1,6 +1,7 @@
 <script setup>
 import Navbar from './components/Navbar.vue'
 import HMT from './components/HMT.vue'
+import Footer from './components/Footer.vue'
 </script>
 
 <template>
@@ -10,6 +11,7 @@ import HMT from './components/HMT.vue'
     <div class="wrapper">
       <Navbar msg="You did it!" />
       <HMT />
+      <Footer style="top: 740%; position: absolute; width: 100%;" />
     </div>
   </header>
 </template>
