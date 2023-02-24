@@ -1,5 +1,6 @@
 <script setup>
 import HMTItem from '../components/HMTitem.vue'
+import Doughnut from './Doughnut.vue';
 </script>
 
 <template>
@@ -25,7 +26,7 @@ import HMTItem from '../components/HMTitem.vue'
             <img src="../assets/etherBtn.png">
             <img src="../assets/polyBtn.png">
           </div>
-        </div>
+        </div><br>
         <div style="display: flex; justify-content: space-between;">
           <div class="loreBtn"><div class="ttt">Smart contract audit:</div><div class="rrr">Loremipsum</div></div>
           <div class="loreBtn"><div class="ttt">Escrow Factory:</div><div class="rrr">Loremipsum</div></div>
@@ -34,7 +35,8 @@ import HMTItem from '../components/HMTitem.vue'
     </div>
     <div class="humanMediabg">
       <div class="mediaTxt">HUMAN in the media</div>
-      <img src="../assets/mediaCards.png" style="width:100%; top: 300px; position: relative;">
+      <Doughnut style="width:100%; top: 200px; position: relative;"/>
+      <!-- <img src="../assets/mediaCards.png" style="width:100%; top: 200px; position: relative;"> -->
     </div>
     <img src="../assets/tokenallo.png" style="top:368%; position:absolute; width: 60%; left: 20%;">
     <img src="../assets/supTime.png" style="top:447%; position:absolute; width: 60%; left: 20%;">
