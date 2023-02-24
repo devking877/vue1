@@ -35,10 +35,13 @@ import Doughnut from './Doughnut.vue';
     </div>
     <div class="humanMediabg">
       <div class="mediaTxt">HUMAN in the media</div>
-      <Doughnut style="width:100%; top: 200px; position: relative;"/>
-      <!-- <img src="../assets/mediaCards.png" style="width:100%; top: 200px; position: relative;"> -->
+      <img src="../assets/mediaCards.png" style="width:100%; top: 200px; position: relative;">
     </div>
-    <img src="../assets/tokenallo.png" style="top:368%; position:absolute; width: 60%; left: 20%;">
+    
+      <img src="../assets/Group.png" style="top:368%; position: absolute; left: 50%; transform: translate(-50%, 44%); width: 30%">
+      <Doughnut style="top:368%; position:absolute; width: 100%; left: 0%;"/>
+    
+    <!-- <img src="../assets/tokenallo.png" style="top:368%; position:absolute; width: 60%; left: 20%;"> -->
     <img src="../assets/supTime.png" style="top:447%; position:absolute; width: 60%; left: 20%;">
     <div class="howHMTbg">
       <div class="howText">How do i get HMT?</div>
