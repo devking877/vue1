@@ -20,17 +20,109 @@
         <div style="display: flex;">
           <img src="../assets/tokenTypeBtn.png" style="width:33%">
           <img src="../assets/contactbg.png" style="width:63%">
-          <div style="display: flex; height: 80px; left:50%; left:50%">
+          <div style="display: flex; height: 80px; left:50%; position:absolute">
             <img src="../assets/etherBtn.png">
             <img src="../assets/polyBtn.png">
           </div>
         </div>
+        <div style="display: flex; justify-content: space-between;">
+          <div class="loreBtn"><div class="ttt">Smart contract audit:</div><div class="rrr">Loremipsum</div></div>
+          <div class="loreBtn"><div class="ttt">Escrow Factory:</div><div class="rrr">Loremipsum</div></div>
+        </div>
       </div>
+    </div>
+    <div class="humanMediabg">
+      <div class="mediaTxt">HUMAN in the media</div>
+      <img src="../assets/mediaCards.png" style="width:100%; top: 300px; position: relative;">
+    </div>
+    <img src="../assets/tokenallo.png" style="top:368%; position:absolute; width: 60%; left: 20%;">
+    <img src="../assets/supTime.png" style="top:447%; position:absolute; width: 60%; left: 20%;">
+    <div class="howHMTbg">
+      <div class="howText">How do i get HMT?</div>
     </div>
   </div>
 </template>
 
 <style>
+.howText{
+  font-family: 'Alliance No.1';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 72px;
+  /* identical to box height, or 120% */
+
+  letter-spacing: -0.4px;
+  color: #320A8D;
+  left: 50%;
+  transform: translateX(-50%);
+  position:absolute;
+  top:103px;
+}
+
+.howHMTbg{
+  background: linear-gradient(167.14deg, #F0F2FC 9.58%, #FFFFFF 93.46%);
+  width: 80%;
+  left: 10%;
+  position:absolute;
+  top: 530%;
+  height: 427px;
+}
+
+.mediaTxt{
+  font-family: 'Alliance No.1';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 72px;
+  top:101px;
+  text-align: center;
+  letter-spacing: -0.4px;
+  color: #320A8D;
+  position:absolute;
+  left:50%;
+  transform: translateX(-50%);
+}
+
+.humanMediabg{
+  background: #F2F2FA;
+  border-radius: 40px;
+  top:284%;
+  width: 80%;
+  position:absolute;
+  height: 658px;
+  left: 10%;
+}
+
+.ttt{
+  font-family: 'Alliance No.1';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: 0.3px;
+  color: #FFFFFF;
+}
+
+.rrr{
+  font-family: 'Alliance No1';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 48px;
+  letter-spacing: 0.15px;
+  color: #FFFFFF;
+}
+
+.loreBtn{
+  background: #320A8D;
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 45%;
+  align-items: center;
+}
+
 .tokenCard {
   background: #FFFFFF;
   border-radius: 30px;
