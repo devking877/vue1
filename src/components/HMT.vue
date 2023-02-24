@@ -1,4 +1,5 @@
 <script setup>
+import HMTItem from '../components/HMTitem.vue'
 </script>
 
 <template>
@@ -40,15 +41,45 @@
     <div class="howHMTbg">
       <div class="howText">How do i get HMT?</div>
     </div>
+    <div style="display: flex; justify-content: space-evenly; top: 556%; position: absolute; width: 80%; left: 10%;">
+      <HMTItem :source='"compJobs.png"'/>
+      <HMTItem :source='"compJobs.png"'/>
+      <HMTItem :source='"compJobs.png"'/>
+      <HMTItem :source='"compJobs.png"'/>
+      <HMTItem :source='"compJobs.png"'/>
+    </div>
+    <div class="howHMTbg" style="top: 600%; position: absolute; width: 80%; left: 10%; height: 454px;">
+      <div class="howText">Utility of the HUMAN Token</div>
+    </div>
+    <div style="display: flex; justify-content: space-evenly; top: 624%; position: absolute; width: 80%; left: 10%;">
+      <HMTItem :source='"jobReq.png"'/>
+      <HMTItem :source='"worker.png"'/>
+      <HMTItem :source='"valid.png"'/>
+    </div>
+    <div class="disclar">
+      <font font-size="48px">Disclaimer</font><br>The HUMAN Protocol Foundation makes no representation, warranty, or undertaking, express or implied, as to the accuracy, reliability, completeness, or reasonableness of the Information. Any assumptions, opinions, and estimates expressed in the information on this page constitutes the HUMAN Protocol Foundation’s judgment as of 18/11/21 and are subject to change without notice. The HUMAN Protocol Foundation does not accept any liability for any direct, consequential or other loss arising from reliance on the contents of the information in this graphic.
+    </div>
   </div>
 </template>
 
 <style>
+.disclar{
+  font-family: 'Alliance No1';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  /* or 156% */
+
+  letter-spacing: 0.1px;
+  color: #320A8D;
+}
+
 .howText{
   font-family: 'Alliance No.1';
   font-style: normal;
   font-weight: 600;
-  font-size: 60px;
+  font-size: 40px;
   line-height: 72px;
   /* identical to box height, or 120% */
 
