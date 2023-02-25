@@ -11,7 +11,7 @@ import Footer from './components/Footer.vue'
     <div class="wrapper">
       <Navbar msg="You did it!" />
       <HMT />
-      <Footer style="top: 760%; position: absolute; width: 100%;" />
+      <Footer style="top: 780%; position: absolute; width: 100%;" />
     </div>
   </header>
 </template>

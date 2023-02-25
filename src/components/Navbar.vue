@@ -21,6 +21,11 @@ defineProps({
 </template>
 
 <style scoped>
+@media only screen and (max-width: 600px) {
+  .header{
+    display: none;
+  }
+}
 .navitems {
   position: absolute;
   display: flex;

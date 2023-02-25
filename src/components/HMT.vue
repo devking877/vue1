@@ -22,12 +22,12 @@ import Doughnut from './Doughnut.vue';
         <div style="display: flex;">
           <img src="../assets/tokenTypeBtn.png" style="width:33%">
           <img src="../assets/contactbg.png" style="width:63%">
-          <div style="display: flex; height: 80px; left:50%; position:absolute">
+          <div class="epDiv" style="display: flex; height: 80px; left:50%; position:absolute">
             <img src="../assets/etherBtn.png">
             <img src="../assets/polyBtn.png">
           </div>
         </div><br>
-        <div style="display: flex; justify-content: space-between;">
+        <div class="loreDiv">
           <div class="loreBtn"><div class="ttt">Smart contract audit:</div><div class="rrr">Loremipsum</div></div>
           <div class="loreBtn"><div class="ttt">Escrow Factory:</div><div class="rrr">Loremipsum</div></div>
         </div>
@@ -35,28 +35,28 @@ import Doughnut from './Doughnut.vue';
     </div>
     <div class="humanMediabg">
       <div class="mediaTxt">HUMAN in the media</div>
-      <img src="../assets/mediaCards.png" style="width:100%; top: 200px; position: relative;">
+      <div><img class="mediaCards" src="../assets/mediaCards.png"></div>
     </div>
     
       <img src="../assets/Group.png" style="top:368%; position: absolute; left: 50%; transform: translate(-50%, 44%); width: 30%">
       <Doughnut style="top:368%; position:absolute; width: 100%; left: 0%;"/>
     
     <!-- <img src="../assets/tokenallo.png" style="top:368%; position:absolute; width: 60%; left: 20%;"> -->
-    <img src="../assets/supTime.png" style="top:447%; position:absolute; width: 60%; left: 20%;">
+    <img class="supTime" src="../assets/supTime.png" style="top:480%; position:absolute; width: 60%; left: 20%;">
     <div class="howHMTbg">
       <div class="howText">How do i get HMT?</div>
     </div>
-    <div style="display: flex; justify-content: space-evenly; top: 556%; position: absolute; width: 80%; left: 10%;">
+    <div class="howdoDiv" style="display: flex; justify-content: space-evenly; top: 570%; position: absolute; width: 80%; left: 10%;">
       <HMTItem :source='"compJobs.png"'/>
-      <HMTItem :source='"compJobs.png"'/>
-      <HMTItem :source='"compJobs.png"'/>
-      <HMTItem :source='"compJobs.png"'/>
-      <HMTItem :source='"compJobs.png"'/>
+      <HMTItem :source='"grants.png"'/>
+      <HMTItem :source='"ambassador.png"'/>
+      <HMTItem :source='"refer.png"'/>
+      <HMTItem :source='"validation.png"'/>
     </div>
     <div class="howHMTbg" style="top: 600%; position: absolute; width: 80%; left: 10%; height: 454px;">
       <div class="howText">Utility of the HUMAN Token</div>
     </div>
-    <div style="display: flex; justify-content: space-evenly; top: 624%; position: absolute; width: 80%; left: 10%;">
+    <div class="huToken" style="display: flex; justify-content: space-evenly; top: 630%; position: absolute; width: 80%; left: 10%;">
       <HMTItem :source='"jobReq.png"'/>
       <HMTItem :source='"worker.png"'/>
       <HMTItem :source='"valid.png"'/>
@@ -65,7 +65,7 @@ import Doughnut from './Doughnut.vue';
       <font font-size="48px">Disclaimer</font><br>The HUMAN Protocol Foundation makes no representation, warranty, or undertaking, express or implied, as to the accuracy, reliability, completeness, or reasonableness of the Information. Any assumptions, opinions, and estimates expressed in the information on this page constitutes the HUMAN Protocol Foundation’s judgment as of 18/11/21 and are subject to change without notice. The HUMAN Protocol Foundation does not accept any liability for any direct, consequential or other loss arising from reliance on the contents of the information in this graphic.
     </div>
     <div class="recentBg">
-      <div class="recTxt">Recent Entries<button style="font-size: 30px; width: 184px; height: 56px; vertical-align: text-top; right: 0%; position: absolute; border-radius: 10px;">Go to blog</button></div>
+      <div class="recTxt">Recent Entries<button class="blogBtn" style="font-size: 30px; width: 184px; height: 56px; vertical-align: text-top; right: 0%; position: absolute; border-radius: 10px;">Go to blog</button></div>
     </div>
     <div class="recentCards">
       <img src="../assets/Group 1701.png" style="width: 40%;">
@@ -140,7 +140,7 @@ import Doughnut from './Doughnut.vue';
   width: 80%;
   left: 10%;
   position:absolute;
-  top: 530%;
+  top: 550%;
   height: 427px;
 }
 
@@ -198,6 +198,11 @@ import Doughnut from './Doughnut.vue';
   align-items: center;
 }
 
+.loreDiv{
+  display: flex; 
+  justify-content: space-between;
+}
+
 .tokenCard {
   background: #FFFFFF;
   border-radius: 30px;
@@ -237,11 +242,12 @@ import Doughnut from './Doughnut.vue';
   position: absolute;
   left: 8.9%;
   top: 32%;
+  z-index: 5;
 }
 
 .hmtb{
   position: absolute;
-  left:14%;
+  left:0%;
   top: 95.6%;
   display: flex;
   align-items: center;
@@ -271,5 +277,67 @@ import Doughnut from './Doughnut.vue';
   transform: translateX(-50%);
   position:relative;
   top: 143px;
+}
+
+.mediaCards{
+  width:100%; 
+  top: 250px; 
+  position: relative;
+}
+
+@media only screen and (max-width: 600px){
+  .hmtText {
+    display: none;
+  }
+  .loreDiv{
+    display: block;
+  }
+  .loreBtn {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .mediaCards {
+    top:400px;
+  }
+  .recentBg{
+    top:750%;
+  }
+  .recentCards{
+    top:760%;
+  }
+  .recTxt{
+    font-size: 40px;
+  }
+
+  .huToken{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .disclar{
+    top:710%;
+  }
+
+  .HMTitem{
+    width: 80%;
+  }
+
+  .howdoDiv{
+    flex-direction: column;
+    align-items: center;
+    margin-top:-180%;
+  }
+
+  .supTime {
+    margin-top:-120%;
+  }
+
+  .epDiv{
+    margin-left: -20%;
+  }
+
+  .howHMTbg{
+    top:430%;
+  }
 }
 </style>

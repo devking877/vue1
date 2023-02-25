@@ -14,21 +14,22 @@
 </script>
 <template>
     <!-- Footer -->
-    <MDBFooter bg="light" :text="['center', 'black']">
+    <MDBFooter bg="light" :text="['center', 'purple']">
       <!-- Grid container -->
       <MDBContainer class="p-4">
-        <div style="display: flex;">
+        <div style="display: flex; color:purple">
         <!-- Section: Form -->
         <section class="">
           <form action="">
             <!--Grid row-->
             <MDBRow center class="d-flex">
               <!--Grid column-->
-              <div style="display: flex; padding-right:20px; align-items: flex-start;">
-                <strong>Sign up for our newsletter</strong>
+              <div style="margin-right: 70%;">Get HUMAN news and updates</div>
+              <div style="display: flex; align-items: flex-start;">
                 <input placeholder="your@email.com" style="border-radius: 4px; border-color: purple;">
                 <button style="background-color: purple; border-radius: 4px; " class="mb-4"> Subscribe </button>
               </div>
+              <strong style="margin-right: 70%">By subscribing you agree to our Privacy Policy</strong>
               <!--Grid column-->
             </MDBRow>
             <!--Grid row-->
